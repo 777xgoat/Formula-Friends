@@ -17,27 +17,75 @@ body {
   background-position: center;
 }
 
-/* MODIFIED: Using explicit percentage limits to force resizing */
-.image-container {
-  width: 90%;        
-  max-width: 850px;   /* Hard ceiling on width */
-  height: 50vh;       /* Uses 50% of the screen height to prevent blowing up */
-  margin-bottom: 24px;
+/* NEW: The layout wrapper for all your image links */
+.selection-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Lets them wrap nicely on mobile phones */
+  width: 90%;
+  max-width: 1100px;
+  margin-bottom: 40px;
+}
+
+/* NEW: Global style for your clickable image links */
+.image-card {
+  display: block;
+  width: 300px;    /* Sized perfectly to fit 3 in a row comfortably */
+  height: 200px;   
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); 
   border: 2px solid #0096ff; 
-  
-  background-image: url('gamephotos/silverstone.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+/* Pop out effect when hovering over an image link */
+.image-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 150, 255, 0.3);
+  border-color: #60a5fa;
+}
+
+/* Text banner overlay over the images */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(11, 19, 41, 0.9));
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.card-overlay span {
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* NEW: Direct placeholder image files assigned here */
+.card-1 {
+  background-image: url('gamephotos/silverstone.jpg');
+}
+.card-2 {
+  background-image: url('https://unsplash.com');
+}
+.card-3 {
+  background-image: url('https://unsplash.com');
 }
 
 h1 {
   text-align: center;        
   font-family: Arial, sans-serif;
   color: #ffffff; 
-  margin-bottom: 24px;       
+  margin-bottom: 40px;       
 }
 
 .button-link {
