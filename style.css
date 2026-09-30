@@ -35,3 +35,20 @@
   background-color: #bae6fd;
   cursor: pointer;
 }
+.body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;    
+  justify-content: center;   
+  align-items: center;       
+  min-height: 100vh;         
+  box-sizing: border-box;
+
+
+  background-image: url('https://stock.adobe.com/images/british-grand-prix-circuit-view-silverstone-race-track-layout-from-above-with-straightaways-corners-and-paddock-areas/1288070543'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+}
