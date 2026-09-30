@@ -28,7 +28,7 @@ body {
   border: 2px solid #0096ff; /* Neon blue border matching the grid */
   
   /* Loading your silverstone file inside this frame */
-  background-image: url('silverstone.jpg'); 
+  background-image: url('gamephotos/silverstone.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
