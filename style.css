@@ -17,11 +17,11 @@ body {
   background-position: center;
 }
 
-/* UPDATED: Container dimensions are now doubled */
+/* FIXED: Sized to exactly 1.5x original dimensions */
 .image-container {
-  width: 95%;        /* Added a percentage width so it scales down on smaller screens */
-  max-width: 1200px; /* FIXED: Doubled from 600px */
-  height: 700px;     /* FIXED: Doubled from 350px */
+  width: 95%;        
+  max-width: 900px;  /* 1.5x original 600px */
+  height: 525px;     /* 1.5x original 350px */
   margin-bottom: 30px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
