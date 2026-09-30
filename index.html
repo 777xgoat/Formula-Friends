@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Selection</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Your Game Title Here</h1>
+  <h1>Select Your Circuit</h1>
   
-  <!-- Add this line directly between your H1 text and your Play Button -->
-  <div class="image-container"></div>
+  <!-- NEW: Container row wrapping all your image links -->
+  <div class="selection-grid">
+    
+    <!-- Image Card 1 -->
+    <a href="game1.html" class="image-card card-1">
+      <div class="card-overlay"><span>Silverstone</span></div>
+    </a>
 
-  <a href="#" class="button-link">PLAY NOW</a>
+    <!-- Image Card 2 (Placeholder) -->
+    <a href="game2.html" class="image-card card-2">
+      <div class="card-overlay"><span>Monaco</span></div>
+    </a>
+
+    <!-- Image Card 3 (Placeholder) -->
+    <a href="game3.html" class="image-card card-3">
+      <div class="card-overlay"><span>Spa-Francorchamps</span></div>
+    </a>
+
+  </div>
+
+  <a href="#" class="button-link">BACK TO MENU</a>
 
 </body>
 </html>
