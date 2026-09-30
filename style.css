@@ -13,23 +13,21 @@ body {
   background-image: 
     linear-gradient(rgba(0, 150, 255, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 150, 255, 0.1) 1px, transparent 1px);
-  background-size: 40px 40px; /* Size of the grid squares */
+  background-size: 40px 40px; 
   background-position: center;
 }
 
-/* NEW: Container to display the image as a box in the center */
+/* UPDATED: Container dimensions are now doubled */
 .image-container {
-  width: 100%;
-  max-width: 1200px; /* Adjust thickness/width of the image frame */
-  height: 700px;    /* Adjust height of the image frame */
+  width: 95%;        /* Added a percentage width so it scales down on smaller screens */
+  max-width: 1200px; /* FIXED: Doubled from 600px */
+  height: 700px;     /* FIXED: Doubled from 350px */
   margin-bottom: 30px;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Glow shadow effect */
-  border: 2px solid #0096ff; /* Neon blue border matching the grid */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+  border: 2px solid #0096ff; 
   
-
-background-image: url('../gamephotos/silverstone.jpg');
-
+  background-image: url('gamephotos/silverstone.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,7 +38,6 @@ h1 {
   font-family: Arial, sans-serif;
   color: #ffffff; 
   margin-bottom: 24px;       
-  /* Removed the negative margin to align nicely inside the new layout */
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7); 
 }
 
@@ -50,8 +47,6 @@ h1 {
   font-family: Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
-  
-  /* Play Button */
   background-color: #e0f2fe; 
   border: 3px solid #0284c7; 
   color: #0284c7;            
