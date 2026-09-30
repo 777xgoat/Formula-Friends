@@ -17,12 +17,12 @@ body {
   background-position: center;
 }
 
-/* FIXED: Sized to exactly 1.5x original dimensions */
+/* MODIFIED: Using explicit percentage limits to force resizing */
 .image-container {
-  width: 95%;        
-  max-width: 900px;  /* 1.5x original 600px */
-  height: 525px;     /* 1.5x original 350px */
-  margin-bottom: 30px;
+  width: 90%;        
+  max-width: 850px;   /* Hard ceiling on width */
+  height: 50vh;       /* Uses 50% of the screen height to prevent blowing up */
+  margin-bottom: 24px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
   border: 2px solid #0096ff; 
@@ -38,7 +38,6 @@ h1 {
   font-family: Arial, sans-serif;
   color: #ffffff; 
   margin-bottom: 24px;       
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7); 
 }
 
 .button-link {
