@@ -20,8 +20,8 @@ body {
 /* NEW: Container to display the image as a box in the center */
 .image-container {
   width: 100%;
-  max-width: 600px; /* Adjust thickness/width of the image frame */
-  height: 350px;    /* Adjust height of the image frame */
+  max-width: 1200px; /* Adjust thickness/width of the image frame */
+  height: 700px;    /* Adjust height of the image frame */
   margin-bottom: 30px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Glow shadow effect */
